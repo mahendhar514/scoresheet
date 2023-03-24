@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+<servlet>
+    <servlet-name>ScheduleServlet</servlet-name>  //servlet name
+    <servlet-class>scoresheet.ScheduleServlet</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>ScheduleServlet</servlet-name>   //servlet name
+    <url-pattern>/schedule/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>modifyPlayer</servlet-name>  //servlet name
+    <servlet-class>scoresheet.modifyPlayer</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>modifyPlayer</servlet-name>   //servlet name
+    <url-pattern>/playermodify/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>PlayerRegServlet</servlet-name>  //servlet name
+    <servlet-class>scoresheet.PlayerRegServlet</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>PlayerRegServlet</servlet-name>   //servlet name
+    <url-pattern>/player/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ScheduleViewServlet</servlet-name>  //servlet name
+    <servlet-class>scoresheet.ScheduleViewServlet</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>ScheduleViewServlet</servlet-name>   //servlet name
+    <url-pattern>/viewsch/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SearchPlayerServlet</servlet-name>  //servlet name
+    <servlet-class>scoresheet.SearchPlayerServlet</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchPlayerServlet</servlet-name>   //servlet name
+    <url-pattern>/searchplayer/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SearchTeamServlet</servlet-name>  //servlet name
+    <servlet-class>scoresheet.SearchTeamServlet</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchTeamServlet</servlet-name>   //servlet name
+    <url-pattern>/searchteam/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>TeamRegModi</servlet-name>  //servlet name
+    <servlet-class>scoresheet.TeamRegModi</servlet-class>  //servlet class
+</servlet>
+<servlet-mapping>
+    <servlet-name>TeamRegModi</servlet-name>   //servlet name
+    <url-pattern>/up/*</url-pattern>  //how it should appear
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>TeamRegServlet</servlet-name>  //servlet name
+    <servlet-class>scoresheet.TeamRegServlet</servlet-class>  //servlet class
+</servlet>
+ <servlet-mapping>
+    <servlet-name>TeamRegServlet</servlet-name>   //servlet name
+    <url-pattern>/TeamReg/*</url-pattern>  //how it should appear
+</servlet-mapping>
+</web-app>

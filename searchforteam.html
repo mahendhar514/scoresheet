@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search for Player</title>
+<style>
+	body  {
+  background-image: url("cri.jpg");
+}
+	.but {
+  background-color:green;
+  opacity:0.6;
+  color: red; 
+  }
+	.but:hover {
+  background-color:#00ff00;
+  color: white;
+}
+	h2{
+		margin-top:0px;
+	}
+	fieldset {
+	background-color:lightcyan;
+	margin:auto;
+	margin-top:150px;
+	width:200px;
+	padding:20px;
+	border-radius:20px;
+	display:flex;
+	flex-direction: column;
+	}
+	.inp{
+	margin-bottom:20px;
+	height: 25px;
+	}
+	.but{
+	font-size:20px;
+	width:70px;
+	padding:3px;
+	border-radius:7px;
+	cursor:pointer;
+	}
+	.anchor{
+		font-size:20px;
+		margin-top:20px;
+		cursor:pointer;
+	}
+	.butt{
+		display:inline;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<form action="searchteam" method="post">
+	<fieldset>
+		<h2>Search your Team Name</h2>
+		<input type="text" name="name" class="inp" required>
+		<div class="butt">
+		<input type="submit" value="Search" class="but" >&emsp;
+		<a href="team.html" class="anchor">New Team?</a>
+		</div>
+	</fieldset>	
+	</form>
+</div>
+</body>
+</html>

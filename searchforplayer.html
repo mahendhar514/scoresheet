@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search for Player</title>
+<style>
+	body{
+	background-image: url("cri.jpg");
+	}
+	h2{
+		margin-top:0px;
+	}
+	fieldset {
+	background-color:lightcyan;
+	margin:auto;
+	margin-top:150px;
+	width:300px;
+	padding:20px;
+	border-radius:20px;
+	display:flex;
+	flex-direction: column;
+	}
+	.inp{
+	margin-bottom:20px;
+	height: 25px;
+	}
+		.button{
+	background-color:green;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 200px;
+	}
+	.button:hover {
+  background-color:#00ff00;
+  color: white;
+}
+
+	.anchor{
+		font-size:20px;
+		margin-top:20px;
+		cursor:pointer;
+	}
+	.butt{
+		display:inline;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<form action="searchplayer" method="post">
+	<fieldset>
+		<h2>Enter Name</h2>
+		<input type="text" name="name" class="inp" required>
+		<h2>Enter Phone Number</h2>
+		<input type="text" name="phno" class="inp" required>
+		<div class="butt">
+		<input type="submit" value="Search" class="button" >&emsp;
+		<a href="PlayerReg.html" class="anchor">New Player?</a>
+		</div>
+	</fieldset>	
+	</form>
+</div>
+</body>
+</html>

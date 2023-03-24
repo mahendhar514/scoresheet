@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+body  {
+  background-image: url("cri.jpg");
+}
+.button {
+  background-color:green;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 200px;
+  
+  
+}
+.button:hover {
+  background-color:#00ff00;
+  color: white;
+}
+
+	span{
+	color:red;
+	}
+	#f1{
+		display:grid;
+		grid-template-columns:auto auto;
+		height:auto;
+		width:650px;
+		margin:auto;
+		
+	}
+	.box{
+	margin-top:8px;
+	margin-bottom:15px;
+	width:300px;
+	
+	}
+	.but{
+	float:right;
+	}
+
+	.labels{
+	font-size:18px;
+	display:block;
+	margin-bottom:0px;
+	}
+	a:link {
+  	color: red;
+  	background-color: transparent;
+  	text-decoration: none;
+	}
+	a:hover {
+  	color: white;
+ 	 background-color: transparent;
+  	text-decoration: none;
+	}
+	#bottom_button{
+	width:400px;
+	height:auto;
+	margin:auto;
+	}

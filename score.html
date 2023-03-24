@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+.header h1{
+  font-family: 'Oswald', sans-serif;
+  animation: slide 9s ease-in-out infinite;
+  margin-left: 0px;
+}
+@keyframes slide{
+  0%{margin-left: 0%;}
+  50%{margin-left:70%;}
+}
+body  {
+  background-image: url("cri.jpg");
+}
+.five {
+	display:inline-block;
+ 	font-size:20px;
+  margin-left: 10px;
+}
+</style>
+</head>
+<body onload="refreshTime();">
+<div class="header">
+    <h1 style="color:blue;">Cricket Score Board</h1>
+  </div>	<h1 style="margin-left:1050px; color:red; font-size:20px;"> Time :-<span id="time"> </span></h1>
+  <div class="form-head"> 
+  <form action="sc" method="post"> 
+  	<div class="div-five">
+  			<div class="five"><label>Home Club</label><br><input type="text" name="home"></div>
+  			<div class="five"><label>Visitor</label><br><input type="text" name="visit"></div>
+  			<div class="five"><label>Inning of</label><br><input type="text" name="inn"></div>
+  			<div class="five"><label>Played At</label><br><input type="text" name="play"></div>
+  			<div class="five"><label>Date</label><br><input type="date" name="date"></div>
+  	</div>  
+  </form>
+  </div>
+  <script>
+  `use strict`;
+  function refreshTime() {
+  	var dt = new Date();
+  	const a=document.getElementById("time");
+ 	 a.innerHTML = dt.toLocaleTimeString();
+  }
+ 	 setInterval(refreshTime, 1000);
+  </script>
+  
+
+</body>
+</html>
